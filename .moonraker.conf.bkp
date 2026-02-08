@@ -69,3 +69,12 @@ origin = https://github.com/voidtrance/voron-klipper-extensions.git
 install_script = install-extensions.sh
 managed_services = klipper
 
+[update_manager cartographer_plugin]
+type = python
+channel = stable
+virtualenv = ~/klippy-env
+project_name = cartographer3d-plugin
+is_system_service = False
+managed_services = klipper
+info_tags = desc=Cartographer Plugin
+
